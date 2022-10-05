@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable-v24/ic_baseline_home_24.xml" value="0.107" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable-v24/ic_baseline_notifications_none_24.xml" value="0.2015" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable-v24/ic_baseline_settings_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/boder_image.xml" value="0.148" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_add_black24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.158" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1105" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_favorite_white_24.xml" value="0.1105" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_indeterminate_check_box_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_minimize_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_remove_black24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/ic_baseline_star_25.xml" value="0.121" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/drawable/round_button.xml" value="0.141" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_cart.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_cart1.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_category.xml" value="0.1" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_check_out.xml" value="0.25" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_home.xml" value="0.176" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_hot_product.xml" value="0.2" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_product.xml" value="0.11351351351351352" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_product_detail.xml" value="0.1" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_product_detail1.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/activity_splash.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/fragment_cart.xml" value="0.234375" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/fragment_favourite.xml" value="0.1" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/fragment_home.xml" value="0.234375" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/fragment_notification.xml" value="0.234375" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/fragment_order.xml" value="0.234375" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/fragment_user.xml" value="0.234375" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/item_cart.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/item_category.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/item_order_detail.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/item_product.xml" value="0.264" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/layout/item_product_detail.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/NongSan/app/src/main/res/menu/bottom_nav_menu.xml" value="0.234375" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/drawable/addcart.xml" value="0.23" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/drawable/btn_login.xml" value="0.23" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.323" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.161" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/drawable/producthot.xml" value="0.323" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/drawable/radius-50.xml" value="0.218" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/drawable/search.xml" value="0.323" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/activity_cart.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/activity_category.xml" value="0.2904040404040404" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/activity_login.xml" value="0.32212885154061627" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/activity_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/activity_product_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/fragment_favourite.xml" value="0.2109375" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/fragment_order.xml" value="0.25" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/fragment_user.xml" value="0.2109375" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/item_cart.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/item_category.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/item_order_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/layout/item_product.xml" value="0.33" />
+        <entry key="..\:/project/Android/Android-add_to_cart/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

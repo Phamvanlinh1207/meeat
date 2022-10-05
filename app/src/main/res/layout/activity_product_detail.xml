@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9F2FF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img.detail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:foregroundGravity="fill" />
+
+            <ImageButton
+                android:id="@+id/ib.btn.back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#C0C0C0"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <ImageButton
+                android:id="@+id/ib.btn.favourite"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#C0C0C0"
+                app:srcCompat="@drawable/ic_baseline_favorite_white_24" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/round_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#C0C0C0"
+                app:srcCompat="@drawable/ic_baseline_share_24" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tv.product.name"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="Cơm Ngon"
+            android:background="@drawable/producthot"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv.product.price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="-25dp"
+            android:text="100.000 vnđ"
+            android:textColor="#F02424"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#A9A9A9"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A9A9A9"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm Lưu ý Cho Quán"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A9A9A9"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Việc thực hiện yêu cầu còn tùy thuộc vào khả năng của bạn "
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A9A9A9"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgrouddetail"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib.btn.minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/white"
+                    app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+                <TextView
+                    android:id="@+id/ed.quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/ib.btn.plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#C0C0C0"
+                    app:srcCompat="@drawable/ic_baseline_add_24" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Sản phầm uy tín chất lượng"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/addcart"
+        >
+        <TextView
+            android:id="@+id/tv.add.to.cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Thêm vào giỏ hàng"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
