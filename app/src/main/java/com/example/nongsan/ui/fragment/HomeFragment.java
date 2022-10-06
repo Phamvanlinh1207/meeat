@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +19,7 @@ import com.example.nongsan.ui.adapter.CategoryAdapter;
 import com.example.nongsan.ui.adapter.ProductAdapter;
 import com.example.nongsan.ui.constract.HomeFragmentConstract;
 import com.example.nongsan.ui.constract.HomeFragmentPresenter;
+import com.example.nongsan.ui.custom.SearchDialog;
 
 import java.util.List;
 
@@ -25,6 +27,8 @@ public class HomeFragment extends Fragment implements HomeFragmentConstract.IVie
     private HomeFragmentConstract.IPresenter mPresenter;
     private RecyclerView rc;
     private RecyclerView rcHotProducts;
+    private SearchView svSearch;
+
 
     @Nullable
     @Override
@@ -41,6 +45,21 @@ public class HomeFragment extends Fragment implements HomeFragmentConstract.IVie
         rc = rootView.findViewById(R.id.rc);
         rc.setLayoutManager(new LinearLayoutManager(getContext()));
         rcHotProducts = rootView.findViewById(R.id.rc_hot_products);
+
+        svSearch = rootView.findViewById(R.id.sv_search);
+        svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                String key = svSearch.getQuery().toString();
+                mPresenter.search(key);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                return false;
+            }
+        });
 
     }
 
@@ -69,5 +88,10 @@ public class HomeFragment extends Fragment implements HomeFragmentConstract.IVie
         rcHotProducts.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         rcHotProducts.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+    }
+    @Override
+    public void setProductListSearchToView(List<Product> productList) {
+        SearchDialog searchDialog = new SearchDialog(getContext(), productList);
+        searchDialog.show();
     }
 }

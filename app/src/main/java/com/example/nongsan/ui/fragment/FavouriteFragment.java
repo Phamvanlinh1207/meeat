@@ -19,6 +19,8 @@ import com.example.nongsan.ui.constract.FavouriteFragmentPresenter;
 
 import java.util.List;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class FavouriteFragment extends Fragment implements FavouriteFragmentConstract.IView {
     private FavouriteFragmentConstract.IPresenter mPresenter;
     private RecyclerView rcFavourite;
@@ -49,4 +51,14 @@ public class FavouriteFragment extends Fragment implements FavouriteFragmentCons
         rcFavourite.setLayoutManager(new LinearLayoutManager(getContext()));
         rcFavourite.setAdapter(adapter);
     }
+
+//    @Override
+//    public void setFavouriteSuccess() {
+//        new SweetAlertDialog(getContext())
+//                .setTitleText("Đã yêu thích")
+//                .show();
+//        initData();
+//    }
+
+
 }

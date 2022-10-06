@@ -17,6 +17,8 @@ import com.example.nongsan.utils.Constants;
 import com.example.nongsan.utils.StringHelper;
 import com.squareup.picasso.Picasso;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class ProductDetailActivity extends BaseActivity implements ProductDetailConstract.IView {
     private ProductDetailConstract.IPresenter mPresenter;
 
@@ -27,8 +29,8 @@ public class ProductDetailActivity extends BaseActivity implements ProductDetail
 
     private ImageButton ibBtnBack;
     private ImageButton ibBtnFavourite;
-private  ImageButton ibBtnMinus;
-private ImageButton ibBtnPlus;
+    private  ImageButton ibBtnMinus;
+    private ImageButton ibBtnPlus;
     private Product mProduct;
     private TextView tvAddToCart;
 
@@ -99,6 +101,14 @@ private ImageButton ibBtnPlus;
         mPresenter.setView(this);
         mPresenter.getProduct(productId);
     }
+    @Override
+    public void setOrderSuccess() {
+        new SweetAlertDialog(this)
+                .setTitleText("Thêm thành công")
+                .show();
+    }
+
+
 
     @Override
     public void setProductToView(Product product) {

@@ -94,4 +94,12 @@ public class OrderDetailDaoImplement extends DatabaseHelper implements OrderDeta
         db.delete("orders_details", "id = ?", new String[] { String.valueOf(id) });
         db.close();
     }
+
+
+    @Override
+    public void deleteAll() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("orders_details", "id > ?", new String[] { String.valueOf(0) });
+        db.close();
+    }
 }

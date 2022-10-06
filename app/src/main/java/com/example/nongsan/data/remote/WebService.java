@@ -29,6 +29,9 @@ public interface WebService {
     @GET("products/hot.php")
     Call<List<Product>> hotProducts();
 
+    @GET("products/search.php")
+    Call<List<Product>> search(@Query("key") String key);
+
     /**
      * localhost/api/products/filter.php?categoryId=1
      * @param categoryId

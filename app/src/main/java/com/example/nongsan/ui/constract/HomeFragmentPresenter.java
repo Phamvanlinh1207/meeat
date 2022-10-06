@@ -57,5 +57,21 @@ public class HomeFragmentPresenter implements  HomeFragmentConstract.IPresenter{
             }
         });
     }
+    @Override
+    public void search(String key) {
+        WebService service = RetrofitContrller.service();
+        service.search(key).enqueue(new Callback<List<Product>>() {
+            @Override
+            public void onResponse(Call<List<Product>> call, Response<List<Product>> response) {
+                mView.setProductListSearchToView(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<List<Product>> call, Throwable t) {
+
+            }
+        });
+    }
+
 
 }

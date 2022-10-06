@@ -36,7 +36,8 @@
             android:textColor="@color/black"
             android:gravity="center"
             />
-        <ImageButton
+        <ImageView
+            android:id="@+id/iv.btn.delete.all"
             android:layout_alignParentRight="true"
             android:background="#4F84DF"
             app:srcCompat="@drawable/ic_baseline_delete_forever_24"

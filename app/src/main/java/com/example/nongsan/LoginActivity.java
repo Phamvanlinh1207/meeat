@@ -12,6 +12,8 @@ import android.widget.Toast;
 import com.example.nongsan.ui.constract.LoginConstract;
 import com.example.nongsan.ui.constract.LoginPresenter;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class LoginActivity extends BaseActivity implements LoginConstract.IView {
     private LoginConstract.IPresenter mPreseneter;
 
@@ -57,6 +59,8 @@ public class LoginActivity extends BaseActivity implements LoginConstract.IView 
 
     @Override
     public void loginFailed() {
-        Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
-    }
+        new SweetAlertDialog(this)
+                .setTitleText("Đăng nhập thất bại")
+                .show();
+        initData();    }
 }

@@ -17,5 +17,7 @@ public class FavouriteFragmentPresenter implements FavouriteFragmentConstract.IP
     public void getFavouriteList() {
         List<Favourite> favouriteList = DatabaseDao.getInstance().getProductDao().all();
         mView.setFavouriteListToView(favouriteList);
+//        mView.setFavouriteSuccess();
     }
+
 }

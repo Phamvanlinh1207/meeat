@@ -238,7 +238,7 @@ android:layout_height="match_parent"
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hổ trợ"
+            android:text="Hỗ trợ"
             android:textSize="20dp"
             android:layout_marginBottom="20dp"
 

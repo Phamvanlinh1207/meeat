@@ -10,11 +10,25 @@ public class OrderFragmentPresenter implements OrderFragmentConstract.IPresenter
     @Override
     public void setView(OrderFragmentConstract.IView view) {
         mView = view;
+
     }
 
     @Override
     public void getOrderDetailList() {
         List<OrderDetail> orderDetailList = DatabaseDao.getInstance().getOrderDetailDao().all();
         mView.setOrderDetailListToView(orderDetailList);
+
+    }
+
+    @Override
+    public void deleteAll() {
+        DatabaseDao.getInstance().getOrderDetailDao().deleteAll();
+        mView.setDeleteSuccess();
+    }
+
+    @Override
+    public void delete(int orderDetailId) {
+        DatabaseDao.getInstance().getOrderDetailDao().delete(orderDetailId);
+        mView.setDeleteSuccess();
     }
 }

@@ -7,10 +7,15 @@ import java.util.List;
 public interface OrderFragmentConstract {
     interface IView{
         void setOrderDetailListToView(List<OrderDetail> orderDetailList);
+        void setDeleteSuccess();
+
     }
 
     interface IPresenter{
         void setView(IView view);
         void getOrderDetailList();
+        void deleteAll();
+        void delete(int orderDetailId);
+
     }
 }

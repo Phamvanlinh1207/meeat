@@ -50,6 +50,8 @@ public class ProductDetailPresenter implements ProductDetailConstract.IPresenter
             orderDetail.quantity += quantity;
             orderDetailDao.update(orderDetail);
         }
+        mView.setOrderSuccess();
+
 
     }
 }

@@ -38,7 +38,7 @@ public class LoginPresenter implements LoginConstract.IPresenter{
 
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
-                Log.e("login failed", t.toString());
+                Log.e("Đăng nhập thất bại", t.toString());
             }
         });
     }

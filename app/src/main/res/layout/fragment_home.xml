@@ -24,6 +24,7 @@
                 android:background="@drawable/logo"/>
         </androidx.cardview.widget.CardView>
         <SearchView
+            android:id="@+id/sv.search"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"

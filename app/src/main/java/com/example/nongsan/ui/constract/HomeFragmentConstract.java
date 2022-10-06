@@ -10,11 +10,15 @@ public interface HomeFragmentConstract {
         void setCategoryListToView(List<Category> categoryList);
         void showCategory(Category category);
         void setHotProductsToView(List<Product> productList);
+        void setProductListSearchToView(List<Product> productList);
+
     }
 
     interface IPresenter{
         void setView(IView view);
         void getCategoryList();
         void getHotProducts();
+        void search(String key);
+
     }
 }

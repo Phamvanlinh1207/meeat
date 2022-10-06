@@ -5,6 +5,9 @@ import com.example.nongsan.data.remote.entity.Product;
 public interface ProductDetailConstract {
     interface IView{
         void setProductToView(Product product);
+        void setOrderSuccess();
+
+
     }
 
     interface IPresenter{

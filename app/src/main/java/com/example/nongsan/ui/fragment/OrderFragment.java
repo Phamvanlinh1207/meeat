@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,9 +20,13 @@ import com.example.nongsan.ui.constract.OrderFragmentPresenter;
 
 import java.util.List;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class OrderFragment extends Fragment implements OrderFragmentConstract.IView {
     private OrderFragmentConstract.IPresenter mPresenter;
     private RecyclerView rcOrderDetail;
+    private ImageView ivBtnDeleteAll;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -35,6 +40,13 @@ public class OrderFragment extends Fragment implements OrderFragmentConstract.IV
 
     private void initGUI(View rootVIew){
         rcOrderDetail = rootVIew.findViewById(R.id.rc_order_detail);
+        ivBtnDeleteAll = rootVIew.findViewById(R.id.iv_btn_delete_all);
+        ivBtnDeleteAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mPresenter.deleteAll();
+            }
+        });
     }
 
     private void initData(){
@@ -45,8 +57,16 @@ public class OrderFragment extends Fragment implements OrderFragmentConstract.IV
 
     @Override
     public void setOrderDetailListToView(List<OrderDetail> orderDetailList) {
-        OrderDetailAdapter adapter = new OrderDetailAdapter(getContext(), orderDetailList);
+        OrderDetailAdapter adapter = new OrderDetailAdapter(getContext(), orderDetailList, mPresenter);
         rcOrderDetail.setAdapter(adapter);
         rcOrderDetail.setLayoutManager(new LinearLayoutManager(getContext()));
+    }
+
+    @Override
+    public void setDeleteSuccess() {
+        new SweetAlertDialog(getContext())
+                .setTitleText("Xoá Thành Công")
+                .show();
+        initData();
     }
 }

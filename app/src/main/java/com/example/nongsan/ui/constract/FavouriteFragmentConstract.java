@@ -7,6 +7,8 @@ import java.util.List;
 public interface FavouriteFragmentConstract {
     interface IView{
         void setFavouriteListToView(List<Favourite> favouriteList);
+//        void setFavouriteSuccess();
+
     }
 
     interface IPresenter{
